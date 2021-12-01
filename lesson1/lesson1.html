@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1 Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+<div id="app">
+    <div v-for="cat in cats" class="catDiv">
+        <img v-bind:src="cat.img">
+        <p>Имя: {{`${cat.name}`}}</p>
+        <p>Возраст: {{`${cat.age}`}}</p>
+        <p>Цвет: {{`${cat.color}`}}</p>
+        <a href="#">Подробнее</a>
+    </div>
+</div>
+<script src="js/lesson1.js"></script>
+</body>
+</html>

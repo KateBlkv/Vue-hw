@@ -1,0 +1,28 @@
+.catDiv {
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    background-color: #b69bdc;
+    margin-top: 20px;
+}
+
+img {
+    height: 250px;
+    border-radius: 50%;
+}
+
+p {
+    font-size: 14px;
+    color: darkblue;
+}
+
+a {
+    display: block;
+    background-color: rgb(106, 27, 154);
+    color: rgb(237, 231, 246);
+    text-align: center;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    border-radius: 10px;
+}
