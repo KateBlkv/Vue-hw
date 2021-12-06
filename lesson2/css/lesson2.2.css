@@ -1,0 +1,40 @@
+.bottom{
+    width: 50%;
+    height: 30px;
+    background-color: grey;
+    border: 1px solid black;
+    align-items: center;
+    margin: 5px;
+
+}
+.bottoms{
+    display: flex;
+    align-items: center;
+    margin: 10px 100px;
+}
+#app{
+
+}
+
+.grid p {
+    display: none;
+}
+.grid img{
+    width: 33%;
+    border: 3px solid white;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inlist{
+    display: flex;
+}
+.inlist img{
+    width: 20%;
+    border-radius: 50%;
+}
+.inlist p {
+    display: block;
+    width: 80%;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1 Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/lesson2.1.css">
+</head>
+<body>
+<div id="app">
+    <div v-for="item in sorted"
+         :class="{zero: item.count === 0, many: item.count > 20, 'not-many': item.count < 21 &&  item.count > 0}"
+    >
+        <p>Наименование: {{item.title}}</p>
+        <p>Цена: {{item.price}}</p>
+        <p>Количество: {{item.count}}</p>
+    </div>
+</div>
+<script src="js/lesson2.1.js"></script>
+</body>
+</html>
