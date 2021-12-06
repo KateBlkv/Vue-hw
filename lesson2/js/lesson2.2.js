@@ -61,7 +61,17 @@ Vue.createApp({
                     image: "https://picsum.photos/id/30/1000/1000"
                 }
             ],
-            view: true
+            view: false
+        }
+    },
+    methods: {
+        useGrid(){
+            this.view = true;
+            console.log('1', this.view)
+        },
+        useInList(){
+            this.view = false;
+            console.log('2', this.view)
         }
     }
-}).mount("#app");
+}).mount("#app2");

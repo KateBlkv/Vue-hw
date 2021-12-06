@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/lesson2.2.css">
 </head>
 <body>
-<div >
+<div id="app2">
     <div class="bottoms">
-    <div class="bottom">Отобразить сеткой</div>
-    <div class="bottom">Отобразить списком</div>
+    <div class="bottom" @click="useGrid">Отобразить сеткой</div>
+    <div class="bottom" @click="useInList">Отобразить списком</div>
     </div>
     <div id="app">
     <div v-for="article in articles"
@@ -18,10 +18,10 @@
     >
         <img v-bind:src="article.image"
              v-bind:alt="article.title">
-        <p>Наименование: {{article.title}}</p>
+        <p>{{article.title.toUpperCase()}}</p>
     </div>
     </div>
 </div>
-<script src="js/lesson2.1.js"></script>
+<script src="js/lesson2.2.js"></script>
 </body>
 </html>

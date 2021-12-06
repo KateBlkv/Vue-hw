@@ -13,26 +13,30 @@
     margin: 10px 100px;
 }
 #app{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid p {
     display: none;
 }
 .grid img{
-    width: 33%;
+    width: 100%;
     border: 3px solid white;
 }
 .grid{
-    display: flex;
-    flex-wrap: wrap;
+    width: 33%;
 }
 .inlist{
+    width: 100%;
     display: flex;
+    align-items: center;
 }
 .inlist img{
-    width: 20%;
+    height: 100px;
+    max-width: 20%;
     border-radius: 50%;
+    object-fit: cover;
 }
 .inlist p {
     display: block;
