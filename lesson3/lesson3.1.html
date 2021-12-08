@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1 Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/lesson2.2.css">
+</head>
+<body>
+<div id="app2">
+    <div> <!-- v-model:свойство-из-data -->
+        <label for="filterName">Введите название: </label>
+        <input type="text"
+               id="filterName"
+               v-model="filter">
+    </div>
+    <div id="app">
+        <div v-for="article in filtered"
+             class="inlist"
+        >
+            <img v-bind:src="article.image"
+                 v-bind:alt="article.title">
+            <p>{{article.title.toUpperCase()}}</p>
+        </div>
+    </div>
+
+
+</div>
+<script src="js/lesson3.1.js"></script>
+</body>
+</html>
+
