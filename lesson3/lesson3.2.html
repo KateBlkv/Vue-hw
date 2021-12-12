@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3 HW Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--<link rel="stylesheet" href="css/lesson2.1.css">-->
+    <!--<script src="js/lesson3.2.js"></script>-->
+</head>
+<body>
+<div id="app">
+    <form @submit.prevent="submitForm">
+    <fieldset>
+        <p>Выберите услуги из списка</p>
+        <div v-for="service in services">
+            <label>
+                <input :value="service.id" type="checkbox" name="price[]"
+                       v-model="selected">
+                {{service.title}}
+            </label>
+        </div>
+    </fieldset>
+    <div>
+        <p>Итого:</p>
+        <p>{{userSum}}</p>
+    </div>
+    </form>
+</div>
+<script src="js/lesson3.2.js"></script>
+</body>
+</html>
