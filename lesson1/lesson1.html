@@ -9,10 +9,10 @@
 <body>
 <div id="app">
     <div v-for="cat in cats" class="catDiv">
-        <img v-bind:src="cat.img">
-        <p>Имя: {{`${cat.name}`}}</p>
-        <p>Возраст: {{`${cat.age}`}}</p>
-        <p>Цвет: {{`${cat.color}`}}</p>
+        <img :src="cat.img">
+        <p>Имя: {{cat.name}}</p>
+        <p>Возраст: {{cat.age}}</p>
+        <p>Цвет: {{cat.color}}</p>
         <a href="#">Подробнее</a>
     </div>
 </div>

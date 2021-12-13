@@ -61,9 +61,11 @@ Vue.createApp({
                     image: "https://picsum.photos/id/30/1000/1000"
                 }
             ],
-            view: false
+            view: false,
+            filterName: ""
         }
     },
+
     methods: {
         useGrid(){
             this.view = true;
