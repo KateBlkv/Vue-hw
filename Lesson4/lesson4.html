@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<section id="app">
+    <h2>Галерея</h2>
+    <div class="addPhoto">
+        <h3>Добавить фото:</h3>
+        <form>
+            <label>Название:<input type="text" v-model="newPhoto.name"></label>
+            <label>Ссылка:<input type="text" v-model="newPhoto.src"></label>
+        </form>
+        <button @click="addPhoto">Добавить фото</button>
+    </div>
+    <div class="gallery">
+        <imgForm
+                v-for="photo in photos"
+                :name="photo.name"
+                :src="photo.src"
+                @delete-photo="deletePhoto"
+                :key="photo.src"></imgForm>
+    </div>
+</section>
+<script src="/js/js.js"></script>
+</body>
+</html>
