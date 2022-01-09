@@ -2,7 +2,8 @@
   <div class="cart">
     <in-cart-item v-for="elem in goodsInCart" :item="elem" :key="elem.id"/>
     <div>
-      <p>Итого: {{userSum}}</p>
+      <p v-if="userSum">Итого: {{userSum}}</p>
+      <p v-if="userSum <= 0">Ваша корзина пуста</p>
     </div>
   </div>
 </template>

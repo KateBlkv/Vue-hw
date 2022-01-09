@@ -8,7 +8,7 @@
     </div>
     <div class="changeBtn">
       <button id="-" @click="minusClickHandler">-</button>
-      <span>  {{item.inCartCount}}  </span>
+      <span class="count">  {{item.inCartCount}}  </span>
       <button id="+" @click="plusClickHandler" :disabled="item.count <= 0">+</button>
     </div>
     <div class="mainDelBtn">
